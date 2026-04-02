@@ -160,7 +160,7 @@ Code reviews & task management
   <a href="mailto:shailendrajaiswar1@gmail.com">
     <img src="https://skillicons.dev/icons?i=gmail" />
   </a>
-  <a href="YOUR_LINKEDIN_LINK">
+  <a href="www.linkedin.com/in/shailendra-kumar-jaiswar-906000277">
     <img src="https://skillicons.dev/icons?i=linkedin" />
   </a>
 </p>

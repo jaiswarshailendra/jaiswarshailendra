@@ -157,10 +157,11 @@ Code reviews & task management
 ## 📫 Connect With Me  
 
 <p>
-  <a href="mailto:shailendrajaiswar1@gmail.com">
+  <a href="mailto:shailendrajaiswar1@gmail.com" target="_blank">
     <img src="https://skillicons.dev/icons?i=gmail" />
   </a>
-  <a href="[www.linkedin.com/in/shailendra-kumar-jaiswar-906000277](https://www.linkedin.com/in/shailendra-kumar-jaiswar-906000277)">
+
+  <a href="https://www.linkedin.com/in/shailendra-kumar-jaiswar-906000277" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" />
   </a>
 </p>

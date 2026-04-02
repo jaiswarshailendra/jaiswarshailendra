@@ -1,17 +1,33 @@
 name: Generate Snake
 
+# Trigger workflow manually or every 12 hours
 on:
   schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *"   # runs every 12 hours
+  workflow_dispatch:          # allows manual run
+
+# Important: gives permission to push files
+permissions:
+  contents: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: Platane/snk@v3
+      # Step 1: Generate the snake SVG
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
           github_user_name: jaiswarshailendra
           outputs: |
-            github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake.svg
+
+      # Step 2: Push the generated SVG to output branch
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
